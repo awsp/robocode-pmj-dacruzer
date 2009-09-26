@@ -42,6 +42,10 @@ public abstract class RobotTestBed extends BattleAdaptor {
   protected int errors = 0;
   /** The number of messages generated during this battle so far. */
   protected int messages = 0;
+  /** The height of the battle field, initialized at the beginning of the battle. */
+  protected int height = 0;
+  /** The width of the battle field, initialized at the beginning of the battle.*/
+  protected int width = 0;
   
   /** True to specify that the position during each turn should be printed out. */
   protected boolean isDumpingPositions = false;
@@ -180,6 +184,8 @@ public abstract class RobotTestBed extends BattleAdaptor {
     if (isDeterministic()) {
       RandomFactory.resetDeterministic(0);
     }
+   this.height = battleFieldSpec.getHeight();
+   this.width = battleFieldSpec.getWidth();
     errors = 0;
     messages = 0;
   }
