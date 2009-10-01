@@ -24,7 +24,7 @@ After checkout out the sources from SVN, or else downloading the distribution, y
  * Use Ivy to download packages required for compilation, including JUnit and Robocode. 
  * Compile the system.
 
-If you cannot successfully compile the system, please contact the mailing list for help. 
+If you cannot successfully compile the system, please contact the [http://groups.google.com/group/robocode-pmj-dacruzer-discuss mailing list] for help. 
 
 == 2.2 Verify installation ==
 
@@ -36,7 +36,7 @@ Once compilation is successful, perform a "verification" of the system as follow
 
 This command will run JUnit, Checkstyle, PMD, !JavaDoc, and !FindBugs, and fail the build if any warnings are issued by these tools.  It will also download these packages using Ivy.  
 
-If the verification does not succeed, then contact the mailing list for help before proceeding. 
+If the verification does not succeed, then contact the [http://groups.google.com/group/robocode-pmj-dacruzer-discuss mailing list] for help before proceeding. 
 
 == 3.0 Development Guidelines ==
 
