@@ -33,7 +33,7 @@ Once compilation is successful, perform a "verification" of the system as follow
 % ant -f verify.build.xml
 }}}
 
-This command will run JUnit, Checkstyle, PMD, JavaDoc, and FindBugs, and fail the build if any warnings are issued by these tools.  It will also download these packages using Ivy.  
+This command will run JUnit, Checkstyle, PMD, !JavaDoc, and !FindBugs, and fail the build if any warnings are issued by these tools.  It will also download these packages using Ivy.  
 
 If the verification does not succeed, then contact the mailing list for help before proceeding. 
 
