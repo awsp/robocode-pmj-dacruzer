@@ -1,6 +1,7 @@
 <project name="robocode-pmj-dacruzer" default="compile" xmlns:ivy="antlib:org.apache.ivy.ant">
   <description>
   Top-level build file for the Robocode PMJ DaCruzer system. 
+  The default target compiles the system.
   </description>
 
   <import file="common.build.xml" />
