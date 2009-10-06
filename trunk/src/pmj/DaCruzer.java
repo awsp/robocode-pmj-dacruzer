@@ -7,7 +7,6 @@ import robocode.ScannedRobotEvent;
  * Implements the DaCruzer robot, which tries to stay away from other robots while firing on 
  * any it finds. 
  * 
- * 
  * @author Philip Johnson
  */
 public class DaCruzer extends Robot {
@@ -60,7 +59,7 @@ public class DaCruzer extends Robot {
   }
 
   /**
-   * Fires at any robots it finds. 
+   * Fires at any robots it finds at full power. 
    * 
    * @param e contains information about the enemy robot, e.g. its location
    */
