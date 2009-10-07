@@ -54,7 +54,7 @@ public class DaCruzer extends Robot {
     
     // Scan for robots and fire after traversing the corners.
     while (true) {
-      this.turnLeft(90);
+      this.turnLeft(48);
     }
     
   }
