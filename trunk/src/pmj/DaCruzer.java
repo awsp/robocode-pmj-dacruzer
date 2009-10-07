@@ -52,9 +52,17 @@ public class DaCruzer extends Robot {
     ahead(fwidth);
     turnRight(360);
     
+    int counter = 0;
+    
     // Scan for robots and fire after traversing the corners.
     while (true) {
-      this.turnLeft(48);
+      if (counter % 2 == 0) {
+        this.turnLeft(48);
+      }
+      else {
+        this.turnRight(90);
+      }
+      counter++;
     }
     
   }
@@ -65,8 +73,7 @@ public class DaCruzer extends Robot {
    * @param e Contains information about the enemy robot, e.g. its location
    */
   public void onScannedRobot(ScannedRobotEvent e) {
-
-    fire(3); //Fire at full power
+    fire(3); // Fire at full power
   }
 
 }
