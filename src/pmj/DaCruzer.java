@@ -5,7 +5,7 @@ import robocode.ScannedRobotEvent;
 
 /**
  * Implements the DaCruzer robot, which tries to stay away from other robots while firing on 
- * any it finds. 
+ * any it finds.
  * 
  * @author Philip Johnson
  */
@@ -27,45 +27,45 @@ public class DaCruzer extends Robot {
     double rposx = getX();
     double rposy = getY();
     
-    // Move to top left corner
+    // Move to top left corner.
     ahead(fheight - rposy);
     turnLeft(90);
     ahead(rposx); 
     turnRight(360);
     
-    // Move to bottom right corner
+    // Move to bottom right corner.
     turnLeft(180);
     ahead(fwidth);
     turnRight(90);
     ahead(fheight);
     turnRight(360);
     
-    // Move to top right corner
+    // Move to top right corner.
     turnLeft(180);
     ahead(fheight);
     turnRight(360);
     
-    // Move to bottom left corner
+    // Move to bottom left corner.
     turnLeft(180);
     ahead(fheight);
     turnRight(90);
     ahead(fwidth);
     turnRight(360);
     
-    // if finished traversing, scan for robots and fire.
+    // Scan for robots and fire after traversing the corners.
     while (true) {
       this.turnLeft(90);
     }
+    
   }
 
   /**
-   * Fires at any robots it finds at full power. 
+   * Fires at any robots it finds at full power. Code courtesy of BJ Peter DeLaCruz.
    * 
-   * @param e contains information about the enemy robot, e.g. its location
+   * @param e Contains information about the enemy robot, e.g. its location
    */
   public void onScannedRobot(ScannedRobotEvent e) {
     fire(3);
-
   }
 
 }
