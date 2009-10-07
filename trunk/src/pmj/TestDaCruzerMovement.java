@@ -12,7 +12,7 @@ import robocode.control.snapshot.IRobotSnapshot;
  *
  */
 public class TestDaCruzerMovement extends RobotTestBed {
-  /** True if the robot visited this corner during the test case. */
+  /** True if the robot visited UpperLeft corner during the test case. */
   boolean visitedUpperLeft = false;
   /** True if the robot visited this corner during the test case. */
   boolean visitedUpperRight = false;
