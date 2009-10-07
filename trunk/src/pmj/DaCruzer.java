@@ -1,11 +1,13 @@
 package pmj;
 
+import java.awt.Color;
+import java.util.Random;
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
 
 /**
- * Implements the DaCruzer robot, which tries to stay away from other
- * robots while firing on any it finds.
+ * Implements the DaCruzer robot, which tries to stay away from other robots while firing on 
+ * any it finds. 
  * 
  * @author Philip Johnson
  */
@@ -19,8 +21,11 @@ public class DaCruzer extends Robot {
     // Get the field's dimensions.
     double fwidth = getBattleFieldWidth();
     double fheight = getBattleFieldHeight();
+    Random r = new Random();
+    int maxColor = (int)Math.pow(2, 32);
     
-    // Orient the robot so that it is facing upward.
+    setColors(new Color(r.nextInt(maxColor)), new Color(r.nextInt(maxColor)),
+              new Color(r.nextInt(maxColor)));
     turnLeft(getHeading());
     
     // Get the robot's current location.
