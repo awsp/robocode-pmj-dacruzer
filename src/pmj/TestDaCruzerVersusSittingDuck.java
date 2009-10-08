@@ -25,13 +25,13 @@ public class TestDaCruzerVersusSittingDuck extends RobotTestBed {
   }
 
   /**
-   * This test runs for 20 rounds.
+   * This test runs for 10 rounds.
    * 
    * @return The number of rounds.
    */
   @Override
   public int getNumRounds() {
-    return 20;
+    return 10;
   }
 
   /**
