@@ -28,13 +28,13 @@ public class DaCruzer extends Robot {
 	setBulletColor(Color.red);
 	  
     // Get the robot's current location.
-    double rposx = getX();
-    double rposy = getY();
+    double rposX = getX();
+    double rposY = getY();
     
     // Move to top left corner
-    ahead(fheight - rposy);
+    ahead(fheight - rposY);
     turnLeft(90);
-    ahead(rposx); 
+    ahead(rposX); 
     turnRight(360);
     
     // Move to bottom right corner
