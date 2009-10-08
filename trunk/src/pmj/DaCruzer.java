@@ -27,34 +27,36 @@ public class DaCruzer extends Robot {
     
     //change bullet color to red.
     setBulletColor(Color.red);
+    //change radar color to black.
+    setRadarColor(Color.black);
       
     // Get the robot's current location.
     double rposX = getX();
     double rposY = getY();
     
     // Move to top left corner
-    ahead(fheight - rposY);
+    ahead(battleFieldHeight - rposY);
     turnLeft(90);
     ahead(rposX); 
     turnRight(360);
     
     // Move to bottom right corner
     turnLeft(180);
-    ahead(fwidth);
+    ahead(battleFieldWidth);
     turnRight(90);
-    ahead(fheight);
+    ahead(battleFieldHeight);
     turnRight(360);
     
     // Move to top right corner
     turnLeft(180);
-    ahead(fheight);
+    ahead(battleFieldHeight);
     turnRight(360);
     
     // Move to bottom left corner
     turnLeft(180);
-    ahead(fheight);
+    ahead(battleFieldHeight);
     turnRight(90);
-    ahead(fwidth);
+    ahead(battleFieldWidth);
     turnRight(360);
     
     // if finished traversing, scan for robots and fire.
