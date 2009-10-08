@@ -34,9 +34,9 @@ public class DaCruzer extends Robot {
     double rPosy = getY();
     
     // Move to top left corner.
-    ahead(fHeight - rposy);
+    ahead(fHeight - rPosy);
     turnLeft(90);
-    ahead(rposx); 
+    ahead(rPosx); 
     turnRight(360);
     
     // Move to bottom right corner.
