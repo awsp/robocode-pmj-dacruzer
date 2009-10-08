@@ -28,6 +28,7 @@ public class DaCruzer extends Robot {
     
     setColors(new Color(r.nextInt(maxColor)), new Color(r.nextInt(maxColor)),
               new Color(r.nextInt(maxColor)));
+    // Turns robot left
     turnLeft(getHeading());
     
     // Get the robot's current location.
