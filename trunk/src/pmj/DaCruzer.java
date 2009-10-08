@@ -37,28 +37,28 @@ public class DaCruzer extends Robot {
     double rposY = getY();
     
     // Move to top left corner
-    ahead(battleFieldHeight - rposY);
+    ahead(fheight - rposY);
     turnLeft(90);
     ahead(rposX); 
     turnRight(360);
     
     // Move to bottom right corner
     turnLeft(180);
-    ahead(battleFieldWidth);
+    ahead(fwidth);
     turnRight(90);
-    ahead(battleFieldHeight);
+    ahead(fheight);
     turnRight(360);
     
     // Move to top right corner
     turnLeft(180);
-    ahead(battleFieldHeight);
+    ahead(fheight);
     turnRight(360);
     
     // Move to bottom left corner
     turnLeft(180);
-    ahead(battleFieldHeight);
+    ahead(fheight);
     turnRight(90);
-    ahead(battleFieldWidth);
+    ahead(fwidth);
     turnRight(360);
     
     // if finished traversing, scan for robots and fire.
