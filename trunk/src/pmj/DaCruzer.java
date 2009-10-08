@@ -24,6 +24,9 @@ public class DaCruzer extends Robot {
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
     
+	//change bullet color to red.
+	setBulletColor(Color.red);
+	  
     // Get the robot's current location.
     double rposx = getX();
     double rposy = getY();
