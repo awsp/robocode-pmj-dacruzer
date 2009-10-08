@@ -2,6 +2,7 @@ package pmj;
 
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
+import java.awt.Color;
 
 /**
  * Implements the DaCruzer robot, which tries to stay away from other robots while firing on 
@@ -18,8 +19,8 @@ public class DaCruzer extends Robot {
   public void run() {
     
     // Get the field's dimensions.
-    double battleFieldWidth = getBattleFieldWidth();
-    double battleFieldHeight = getBattleFieldHeight();
+    double fwidth = getBattleFieldWidth();
+    double fheight = getBattleFieldHeight();
     
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
