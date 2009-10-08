@@ -19,8 +19,8 @@ public class DaCruzer extends Robot {
   public void run() {
     
     // Get the field's dimensions.
-    double fwidth = getBattleFieldWidth();
-    double fheight = getBattleFieldHeight();
+    double fWidth = getBattleFieldWidth();
+    double fHeight = getBattleFieldHeight();
     Random r = new Random();
     int maxColor = (int)Math.pow(2, 32);
     
@@ -33,28 +33,28 @@ public class DaCruzer extends Robot {
     double rposy = getY();
     
     // Move to top left corner.
-    ahead(fheight - rposy);
+    ahead(fHeight - rposy);
     turnLeft(90);
     ahead(rposx); 
     turnRight(360);
     
     // Move to bottom right corner.
     turnLeft(180);
-    ahead(fwidth);
+    ahead(fWidth);
     turnRight(90);
-    ahead(fheight);
+    ahead(fHeight);
     turnRight(360);
     
     // Move to top right corner.
     turnLeft(180);
-    ahead(fheight);
+    ahead(fHeight);
     turnRight(360);
     
     // Move to bottom left corner.
     turnLeft(180);
-    ahead(fheight);
+    ahead(fHeight);
     turnRight(90);
-    ahead(fwidth);
+    ahead(fWidth);
     turnRight(360);
     
     int counter = 0;
@@ -79,7 +79,7 @@ public class DaCruzer extends Robot {
    */
   public void onScannedRobot(ScannedRobotEvent e) {
     // Fire at full power
-	fire(3); 
+    fire(3); 
   }
 
 }
