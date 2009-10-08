@@ -29,8 +29,8 @@ public class DaCruzer extends Robot {
     turnLeft(getHeading());
     
     // Get the robot's current location.
-    double rposx = getX();
-    double rposy = getY();
+    double rPosx = getX();
+    double rPosy = getY();
     
     // Move to top left corner.
     ahead(fHeight - rposy);
