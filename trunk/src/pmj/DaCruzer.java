@@ -22,7 +22,8 @@ public class DaCruzer extends Robot {
     double fWidth = getBattleFieldWidth();
     double fHeight = getBattleFieldHeight();
     
-    Random r = new Random(); // A random variable.
+    // A random variable.
+    Random r = new Random(); 
     int maxColor = (int)Math.pow(2, 32);
     
     setColors(new Color(r.nextInt(maxColor)), new Color(r.nextInt(maxColor)),
