@@ -19,8 +19,10 @@ public class DaCruzer extends Robot {
   public void run() {
     
     // Get the field's dimensions.
-    double fwidth = getBattleFieldWidth(); //Specifies battle field width
-    double fheight = getBattleFieldHeight(); //Specifies battle field Height
+    //Specifies battle field width
+    double fwidth = getBattleFieldWidth();
+    //Specifies battle field Height
+    double fheight = getBattleFieldHeight(); 
     
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
