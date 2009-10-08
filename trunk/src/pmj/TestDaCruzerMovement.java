@@ -48,6 +48,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
     IRobotSnapshot robot = event.getTurnSnapshot().getRobots()[1];
     double xPos = robot.getX();
     double yPos = robot.getY();
+    //Checks to see if the robot visted the top left corner
     if ((xPos < 40) && (yPos < 40)) {
       visitedUpperLeft = true;
     }
