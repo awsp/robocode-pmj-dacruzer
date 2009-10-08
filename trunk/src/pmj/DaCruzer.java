@@ -78,7 +78,8 @@ public class DaCruzer extends Robot {
    * @param e Contains information about the enemy robot, e.g. its location
    */
   public void onScannedRobot(ScannedRobotEvent e) {
-    fire(3); // Fire at full power
+    // Fire at full power
+	fire(3); 
   }
 
 }
