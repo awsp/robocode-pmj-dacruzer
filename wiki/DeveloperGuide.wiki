@@ -1,7 +1,7 @@
 #summary Instructions for how to improve this system.
 #labels Featured
 
-*Table of Contents*
+*Table of Content*
 <wiki:toc max_depth="3" />
 
 = 1.0 Prerequisites =
