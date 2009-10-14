@@ -69,12 +69,12 @@ public class DaCruzer extends Robot {
   }
 
   /**
-   * Fires at any robots it finds. 
+   * Fires at any robots it finds with a power that is based on distance from target. 
    * 
    * @param e contains information about the enemy robot, e.g. its location
    */
   public void onScannedRobot(ScannedRobotEvent e) {
-    fire(3);
+    fire(Math.min(400 / e.getDistance(), 3));
 
   }
 
