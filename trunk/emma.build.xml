@@ -40,12 +40,15 @@
     <junit maxmemory="512M" printsummary="withOutAndErr" fork="yes">
       <classpath>
         <pathelement location="${build.dir}/classes" />
+        <pathelement location="${lib.dir}/robocode/robots" />
         <path refid="compile.classpath"/>
         <path refid="emma.lib.dir"/>
       </classpath>
       <sysproperty key="emma.coverage.out.file" value="${build.dir}/emma/coverage.emma" />
       <sysproperty key="emma.coverage.out.merge" value="true" />
       <sysproperty key="robocode.home" value="${lib.dir}/robocode"/>
+      <sysproperty key="NOSECURITY" value="true"/>
+      
       <formatter type="xml" />
       <batchtest todir="${junit.dir}">
         <fileset dir="${src.dir}">
