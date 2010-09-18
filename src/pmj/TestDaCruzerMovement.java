@@ -1,10 +1,10 @@
 package pmj;
 
 import static org.junit.Assert.assertTrue;
-import pmj.test.RobotTestBed;
 import robocode.control.events.BattleCompletedEvent;
 import robocode.control.events.TurnEndedEvent;
 import robocode.control.snapshot.IRobotSnapshot;
+import robocode.control.testing.RobotTestBed;
 
 /**
  * Tests that DaCruzer moves to all four corners per its specified strategy.
@@ -48,7 +48,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
     IRobotSnapshot robot = event.getTurnSnapshot().getRobots()[1];
     double xPos = robot.getX();
     double yPos = robot.getY();
-    //Checks to see if the robot visted the top left corner
+    //Checks to see if the robot visited the top left corner
     if ((xPos < 40) && (yPos < 40)) {
       visitedUpperLeft = true;
     }
