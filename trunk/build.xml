@@ -6,13 +6,15 @@
 
   <import file="common.build.xml" />
   
-  <property name="junit.version" value="4.5"/>
-  <property name="robocode.version" value="1.7.1.4-Beta"/>
+  <property name="junit.version" value="4.8.2"/>
+  <property name="robocode.version" value="1.7.2.1"/>
 
   <target name="install-libraries" description="Install JUnit and Robocode service libraries.">
     <ivy:retrieve organisation="org.junit" module="junit" revision="${junit.version}" 
       pattern="${lib.dir}/junit/[artifact].[ext]" inline="true" conf="default" 
       log="download-only" transitive="false" type="jar" />
+    
+    <!-- Define the path to the JUnit jar file needed to compile/test these sources. -->
     <path id="junit.path" location="${lib.dir}/junit/junit.jar" />
 
     <ivy:retrieve module="robocode" organisation="net.sourceforge.robocode" revision="${robocode.version}" 
@@ -29,9 +31,14 @@
 
     <ivy:retrieve module="robocode" organisation="net.sourceforge.robocode" revision="${robocode.version}" 
       pattern="${lib.dir}/robocode/libs/[artifact].[ext]" inline="true" log="download-only" conf="libs"/>
-    <path id="robocode.path" location="${lib.dir}/robocode/libs/robocode.jar" />
 
-
+    <!-- Define the path to the Robocode jar files needed to compile/test/run these sources. -->
+    <path id="robocode.path">
+        <fileset dir="${lib.dir}/robocode/libs">
+          <include name="robocode.jar" />
+          <include name="robocode.testing.jar" />
+        </fileset>
+      </path>
   </target>
 
   <!-- Basic properties for this system. -->
