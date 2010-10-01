@@ -45,6 +45,7 @@
       <sourcePath>
         <fileset dir="${src.dir}">
           <include name="**/*.java" />
+          <exclude name="**/package-info.java" />
         </fileset>
       </sourcePath>
       <class location="${build.dir}/classes" />
