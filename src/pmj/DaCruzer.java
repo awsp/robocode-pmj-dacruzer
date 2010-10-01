@@ -75,7 +75,16 @@ public class DaCruzer extends Robot {
    */
   public void onScannedRobot(ScannedRobotEvent e) {
     fire(Math.min(400 / e.getDistance(), 3));
-
   }
 
+  /**
+   * An extraneous method provided simply to illustrate the ability of coverage tools to find 
+   * untested code. 
+   * @param arg1 The first arg.
+   * @param arg2 The second arg.
+   * @return The result of multiplying arg1 and arg2.
+   */
+  public int multiply(int arg1, int arg2 ) {
+    return arg1 * arg2;
+  }
 }
