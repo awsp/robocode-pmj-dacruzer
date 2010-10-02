@@ -44,7 +44,7 @@
   <!-- Basic properties for this system. -->
   <property name="system.name" value="robocode-pmj-dacruzer" />
   <property name="majorVersionNumber" value="1" />
-  <property name="minorVersionNumber" value="1" />
+  <property name="minorVersionNumber" value="2" />
   <tstamp>
     <format property="DAYSTAMP" pattern="Mdd" />
   </tstamp>
