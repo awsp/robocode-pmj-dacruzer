@@ -14,7 +14,7 @@
   <property name="robot.name" value="DaCruzer"/>
   <property name="robot.webpage" value="http://philipmjohnson.blogspot.com/2009/09/DaCruzer.html"/>
   <property name="robot.description" 
-    value="Moves away from other robots. \n Fires whenever it sees someone. \n Thanks to BJ DeLaCruz."/>
+    value="Moves to all four corners. \n Fires whenever it sees someone. \n Thanks to Kimberly Heu."/>
   <property name="robocode.version" value=" 1.7.1.4 Beta"/>
 
   <delete dir="${build.jar.dir}" quiet="true" />
