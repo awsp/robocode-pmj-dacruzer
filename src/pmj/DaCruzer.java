@@ -8,7 +8,6 @@ import java.awt.Color;
  * Implements the DaCruzer robot, which tries to stay away from other robots while firing on 
  * any it finds. 
  * 
- * 
  * @author Philip Johnson
  */
 public class DaCruzer extends Robot {
