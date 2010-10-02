@@ -17,17 +17,6 @@ import robocode.control.events.TurnEndedEvent;
  *
  */
 public class TestDaCruzerVersusSittingDuck extends RobotTestBed {
-  
-  /** True to specify that the position during each turn should be printed out. */
-  protected boolean isDumpingPositions = false;
-  /** True to specify that each turn should be printed out. */
-  protected boolean isDumpingTurns = false;
-  /** True to specify that Robot output should be printed out. */
-  protected boolean isDumpingOutput = false;
-  /** True to specify that error messages should be printed out. */
-  protected boolean isDumpingErrors = true;
-  /** True to specify that Robot messages should be printed out. */
-  protected boolean isDumpingMessages = true;
 
   /**
    * Specifies that SittingDuck and DaCruzer are to be matched up in this test case.
