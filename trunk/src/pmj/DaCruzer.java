@@ -9,6 +9,7 @@ import java.awt.Color;
  * any it finds. 
  * 
  * @author Philip Johnson
+ * @version 1.2
  */
 public class DaCruzer extends Robot {
 
