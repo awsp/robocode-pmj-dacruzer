@@ -76,6 +76,4 @@ public class DaCruzer extends Robot {
   public void onScannedRobot(ScannedRobotEvent e) {
     fire(Math.min(400 / e.getDistance(), 3));
   }
-
-
 }
