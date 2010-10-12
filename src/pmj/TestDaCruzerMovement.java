@@ -8,8 +8,9 @@ import robocode.control.testing.RobotTestBed;
 
 /**
  * Tests that DaCruzer moves to all four corners per its specified strategy.
+ * 
  * @author Philip Johnson
- *
+ * 
  */
 public class TestDaCruzerMovement extends RobotTestBed {
   /** True if the robot visited this corner during the test case. */
@@ -20,37 +21,41 @@ public class TestDaCruzerMovement extends RobotTestBed {
   boolean visitedLowerLeft = false;
   /** True if the robot visited this corner during the test case. */
   boolean visitedLowerRight = false;
-  
+
   /**
    * Specifies that SittingDuck and DaCruzer are to be matched up in this test case.
+   * 
    * @return The comma-delimited list of robots in this match.
    */
   @Override
   public String getRobotNames() {
     return "sample.SittingDuck,pmj.DaCruzer";
   }
-  
+
   /**
    * This test runs for 1 round.
-   * @return The number of rounds. 
+   * 
+   * @return The number of rounds.
    */
   @Override
   public int getNumRounds() {
     return 10;
   }
-  
+
   /**
-   * After each turn, check to see if we're at a corner.  If so, set the corresponding flag.
+   * After each turn, check to see if we're at a corner. If so, set the corresponding flag.
+   * 
    * @param event Info about the current state of the battle.
    */
-  @Override 
+  @Override
   public void onTurnEnded(TurnEndedEvent event) {
     IRobotSnapshot robot = event.getTurnSnapshot().getRobots()[1];
-	
-	//Get robot's current position
+
+    // Get robot's current position
     double xPos = robot.getX();
     double yPos = robot.getY();
-    //Checks to see if the robot visited the top left corner
+
+    // Checks to see if the robot visited the top left corner
     if ((xPos < 40) && (yPos < 40)) {
       visitedUpperLeft = true;
     }
@@ -65,10 +70,10 @@ public class TestDaCruzerMovement extends RobotTestBed {
     }
 
   }
-  
-  
+
   /**
-   * After the battle, check to see that we've visited the corners. 
+   * After the battle, check to see that we've visited the corners.
+   * 
    * @param event Details about the completed battle.
    */
   @Override
@@ -77,7 +82,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
     assertTrue("Check LowerLeft", visitedLowerLeft);
     assertTrue("Check UpperRight", visitedUpperRight);
     assertTrue("Check LowerRight", visitedLowerRight);
-    
+
   }
 
 }
