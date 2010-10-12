@@ -14,8 +14,9 @@ import java.awt.Color;
 public class DaCruzer extends Robot {
 
   /**
-   * Moves to successive corners and rotates the robot to maximize the chances of scanning another
-   * robot. Code courtesy of Kimberly Heu.
+   * Moves to successive corners and rotates the robot to maximize the chances
+   * of scanning another robot. 
+   * Code courtesy of Kimberly Heu.
    */
   public void run() {
 
