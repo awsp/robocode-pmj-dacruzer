@@ -14,7 +14,7 @@ import robocode.control.events.TurnEndedEvent;
  * behavior can be customized and controlled. 
  * 
  * @author Professor Philip Johnson
- *
+ * @version 1.2
  */
 public class TestDaCruzerVersusSittingDuck extends RobotTestBed {
 
