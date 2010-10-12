@@ -1,6 +1,8 @@
 <project name="common" xmlns:ivy="antlib:org.apache.ivy.ant">
   <description>
   Boilerplate Ant code that is project-independent. 
+  Downloads ivy library if necessary and does simple error checking to
+  ensure correct Java and ant versions are installed.
   </description>
 
   <!-- Basic directory structure. -->
