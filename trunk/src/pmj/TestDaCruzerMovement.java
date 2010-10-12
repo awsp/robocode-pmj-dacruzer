@@ -54,7 +54,8 @@ public class TestDaCruzerMovement extends RobotTestBed {
     // Get robot's current position
     double xPos = robot.getX();
     double yPos = robot.getY();
-	final double robotWidth = 40;
+    // The set the width of all robots
+    final double robotWidth = 40.0;
 
     // Checks to see if the robot visited the top left corner
     if ((xPos < robotWidth) && (yPos < robotWidth)) {
