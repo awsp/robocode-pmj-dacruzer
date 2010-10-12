@@ -22,9 +22,9 @@ public class DaCruzer extends Robot {
 
     // Get the field's dimensions.
     // Specifies battle field width
-    double fWidth = getBattleFieldWidth();
+    double fieldWidth = getBattleFieldWidth();
     // Specifies battle field Height
-    double fHeight = getBattleFieldHeight();
+    double fieldHeight = getBattleFieldHeight();
 
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
@@ -39,28 +39,28 @@ public class DaCruzer extends Robot {
     double rposY = getY();
 
     // Move to top left corner
-    ahead(fHeight - rposY);
+    ahead(fieldHeight - rposY);
     turnLeft(90);
     ahead(rposX);
     turnRight(360);
 
     // Move to bottom right corner
     turnLeft(180);
-    ahead(fWidth);
+    ahead(fieldWidth);
     turnRight(90);
-    ahead(fHeight);
+    ahead(fieldHeight);
     turnRight(360);
 
     // Move to top right corner
     turnLeft(180);
-    ahead(fHeight);
+    ahead(fieldHeight);
     turnRight(360);
 
     // Move to bottom left corner
     turnLeft(180);
-    ahead(fHeight);
+    ahead(fieldHeight);
     turnRight(90);
-    ahead(fWidth);
+    ahead(fieldWidth);
     turnRight(360);
 
     // if finished traversing, scan for robots and fire.
