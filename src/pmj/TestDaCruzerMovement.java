@@ -13,13 +13,13 @@ import robocode.control.testing.RobotTestBed;
  *
  */
 public class TestDaCruzerMovement extends RobotTestBed {
-  // True if the robot visited this corner during the test case. 
+  /** True if the robot visited this corner during the test case. */
   boolean visitedUpperLeft = false;
-  // True if the robot visited this corner during the test case. 
+  /** True if the robot visited this corner during the test case. */
   boolean visitedUpperRight = false;
-  // True if the robot visited this corner during the test case. 
+  /** True if the robot visited this corner during the test case. */
   boolean visitedLowerLeft = false;
-  // True if the robot visited this corner during the test case. 
+  /** True if the robot visited this corner during the test case. */
   boolean visitedLowerRight = false;
 
   /**
