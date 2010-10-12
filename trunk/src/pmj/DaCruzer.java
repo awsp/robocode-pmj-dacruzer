@@ -64,7 +64,7 @@ public class DaCruzer extends Robot {
     turnRight(360);
 
     // if finished traversing, scan for robots and fire.
-    // spins the body of the robot to conduct scans.
+    // spins the body of the robot 90 degrees to conduct scans.
     while (true) {
       this.turnLeft(90);
     }
