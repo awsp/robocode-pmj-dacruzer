@@ -28,9 +28,9 @@ public class DaCruzer extends Robot {
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
 
-    // change bullet color to red.
+    // Change bullet color to red.
     setBulletColor(Color.red);
-    // change radar color to black.
+    // Change radar color to black.
     setRadarColor(Color.black);
 
     // Get the robot's current location.
@@ -62,8 +62,8 @@ public class DaCruzer extends Robot {
     ahead(fWidth);
     turnRight(360);
 
-    // if finished traversing, scan for robots and fire.
-    // spins the body of the robot to conduct scans.
+    // If finished traversing, scan for robots and fire.
+    // Spins the body of the robot to conduct scans.
     while (true) {
       this.turnLeft(90);
     }
