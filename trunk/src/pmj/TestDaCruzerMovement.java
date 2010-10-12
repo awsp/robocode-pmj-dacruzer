@@ -49,6 +49,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
    */
   @Override
   public void onTurnEnded(TurnEndedEvent event) {
+    // Get the snapshot of the robot daCruzer 
     IRobotSnapshot robot = event.getTurnSnapshot().getRobots()[1];
 
     // Get robot's current position
