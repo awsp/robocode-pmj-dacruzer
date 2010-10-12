@@ -46,6 +46,8 @@ public class TestDaCruzerMovement extends RobotTestBed {
   @Override 
   public void onTurnEnded(TurnEndedEvent event) {
     IRobotSnapshot robot = event.getTurnSnapshot().getRobots()[1];
+	
+	//Get robot's current position
     double xPos = robot.getX();
     double yPos = robot.getY();
     //Checks to see if the robot visited the top left corner
