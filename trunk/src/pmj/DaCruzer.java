@@ -6,7 +6,7 @@ import java.awt.Color;
 
 /**
  * Implements the DaCruzer robot, which completes a circuit around the arena, 
- * then spins to scan for other robots.
+ * then spins to scan for other robots. 
  * 
  * @author Philip Johnson
  * @version 1.2
