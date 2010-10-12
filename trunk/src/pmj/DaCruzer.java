@@ -5,8 +5,8 @@ import robocode.ScannedRobotEvent;
 import java.awt.Color;
 
 /**
- * Implements the DaCruzer robot, which tries to stay away from other robots while firing on any
- * other robots that it finds.
+ * Implements the DaCruzer robot, which completes a circuit around the arena, 
+ * then spins to scan for other robots.
  * 
  * @author Philip Johnson
  * @version 1.2
