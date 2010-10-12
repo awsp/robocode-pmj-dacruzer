@@ -33,7 +33,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
   }
 
   /**
-   * This test runs for 1 round.
+   * This test runs for 10 round.
    * 
    * @return The number of rounds.
    */
