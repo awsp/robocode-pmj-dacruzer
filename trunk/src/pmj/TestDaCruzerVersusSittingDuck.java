@@ -13,7 +13,7 @@ import robocode.control.events.TurnEndedEvent;
  * Also illustrates the overriding of a set of methods from RobotTestBed to show how the testing
  * behavior can be customized and controlled. 
  * 
- * @author Philip Johnson
+ * @author Professor Philip Johnson
  *
  */
 public class TestDaCruzerVersusSittingDuck extends RobotTestBed {

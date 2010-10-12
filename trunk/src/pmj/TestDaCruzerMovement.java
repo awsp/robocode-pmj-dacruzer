@@ -9,7 +9,7 @@ import robocode.control.testing.RobotTestBed;
 /**
  * Tests that DaCruzer moves to all four corners per its specified strategy.
  *
- * @author Philip Johnson
+ * @author Professor Philip Johnson
  *
  */
 public class TestDaCruzerMovement extends RobotTestBed {
