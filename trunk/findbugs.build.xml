@@ -1,6 +1,7 @@
 <project name="findbugs" default="findbugs" xmlns:ivy="antlib:org.apache.ivy.ant">
   <description>
     Runs findbugs on system, using rules in: lib/findbugs/findbugs.filter.xml
+    Build fails if findbug detects an error.
     Invocation: ant -f findbugs.build.xml
   </description>
 
