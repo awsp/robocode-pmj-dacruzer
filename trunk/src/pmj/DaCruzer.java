@@ -5,8 +5,8 @@ import robocode.ScannedRobotEvent;
 import java.awt.Color;
 
 /**
- * Implements the DaCruzer robot, which tries to stay away from other robots while firing on any it
- * finds.
+ * Implements the DaCruzer robot, which tries to stay away from other robots while firing on any
+ * other robots that it finds.
  * 
  * @author Philip Johnson
  * @version 1.2
@@ -77,7 +77,7 @@ public class DaCruzer extends Robot {
   public void onScannedRobot(ScannedRobotEvent e) {
 
     double firePower = Math.min(400 / e.getDistance(), 3);
-        
+
     this.fire(firePower);
   }
 }
