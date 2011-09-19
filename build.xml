@@ -6,8 +6,8 @@
 
   <import file="common.build.xml" />
   
-  <property name="junit.version" value="4.8.2"/>
-  <property name="robocode.version" value="1.7.2.1"/>
+  <property name="junit.version" value="4.9"/>
+  <property name="robocode.version" value="1.7.3.2"/>
 
   <target name="install-libraries" description="Install JUnit and Robocode service libraries.">
     <ivy:retrieve organisation="org.junit" module="junit" revision="${junit.version}" 
@@ -44,9 +44,9 @@
   <!-- Basic properties for this system. -->
   <property name="system.name" value="robocode-pmj-dacruzer" />
   <property name="majorVersionNumber" value="1" />
-  <property name="minorVersionNumber" value="2" />
+  <property name="minorVersionNumber" value="3" />
   <tstamp>
-    <format property="DAYSTAMP" pattern="Mdd" />
+    <format property="DAYSTAMP" pattern="yyyy.MM.dd.HH.mm" />
   </tstamp>
   <property name="version" value="${majorVersionNumber}.${minorVersionNumber}.${DAYSTAMP}" />
 

@@ -26,7 +26,7 @@
 
   <!-- Ivy download and configuration targets -->
   <property name="ivy.jar.path" location="${user.home}/.ivy2/ivyjar/" />
-  <property name="ivy.version" value="2.1.0"/>
+  <property name="ivy.version" value="2.2.0"/>
   <available file="${ivy.jar.path}/ivy.jar" type="file" property="ivy.available" />
 
   <target name="install-ivy" depends="download-ivy-if-necessary" description="Makes Ivy tasks available, downloads Ivy first if necessary.">
