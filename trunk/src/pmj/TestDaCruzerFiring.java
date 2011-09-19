@@ -10,7 +10,6 @@ import robocode.control.testing.RobotTestBed;
  * This tests for variability in bullet power administered by the robot DaCruzer.
  *
  * @author Philip Johnson
- * @version Java 1.6.0_21
  */
 public class TestDaCruzerFiring extends RobotTestBed {
 

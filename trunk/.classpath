@@ -8,6 +8,6 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/robocode-pmj-dacruzer/lib/robocode/javadoc.zip!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/robocode/libs/robocode.testing.jar"/>
+	<classpathentry kind="lib" path="lib/robocode/libs/robocode.testing.jar" sourcepath="lib/robocode/source.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
