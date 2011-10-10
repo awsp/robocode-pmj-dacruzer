@@ -27,8 +27,8 @@ public class TestDaCruzerFiring extends RobotTestBed {
    * 
    * @return The comma-delimited list of robots in this match.
    */
-  @Override public String getRobotNames() {
-
+  @Override 
+  public String getRobotNames() {
     return "sample.Tracker,pmj.DaCruzer";
   }
   
@@ -37,8 +37,8 @@ public class TestDaCruzerFiring extends RobotTestBed {
    * 
    * @return The number of rounds. 
    */
-  @Override public int getNumRounds() {
-    
+  @Override 
+  public int getNumRounds() {
     return 20;
   }
   
@@ -49,7 +49,8 @@ public class TestDaCruzerFiring extends RobotTestBed {
    * 
    * @param event Info about the current state of the battle.
    */
-  @Override public void onTurnEnded (TurnEndedEvent event) {
+  @Override 
+  public void onTurnEnded (TurnEndedEvent event) {
     
     // All active bullets belong to DaCruzer since SittingDuck does not fire.
     IBulletSnapshot bullets[] = event.getTurnSnapshot().getBullets();
@@ -79,8 +80,8 @@ public class TestDaCruzerFiring extends RobotTestBed {
    * 
    * @param event Details about the completed battle.
    */
-  @Override public void onBattleCompleted(BattleCompletedEvent event) {
-    
+  @Override 
+  public void onBattleCompleted(BattleCompletedEvent event) {
     assertTrue("Bullet Power less than 1.4", firePowerReachLevelOne);
     assertTrue("Bullet Power between 1.5 and 1.9", firePowerReachLevelTwo);
     assertTrue("Bullet Power between 2.0 and 2.4", firePowerReachLevelThree);
