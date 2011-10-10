@@ -17,6 +17,7 @@ public class DaCruzer extends Robot {
    * of scanning another robot. 
    * Code courtesy of Kimberly Heu.
    */
+  @Override
   public void run() {
 
     // Get the field's dimensions.
@@ -24,7 +25,7 @@ public class DaCruzer extends Robot {
     double fieldWidth = getBattleFieldWidth();
     // Specifies battle field Height
     double fieldHeight = getBattleFieldHeight();
-
+    
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
 
@@ -74,11 +75,18 @@ public class DaCruzer extends Robot {
    * 
    * @param e contains information about the enemy robot, e.g. its location
    */
+  @Override
   public void onScannedRobot(ScannedRobotEvent e) {
-
     // OVER 9000!!
     double firePower = Math.min(400 / e.getDistance(), 3);
-
     this.fire(firePower);
+  }
+  
+  /**
+   * A useless method, inserted just to show less than 100% coverage.
+   * @return 4.
+   */
+  private int multiply() {
+    return (2 * 2);
   }
 }
