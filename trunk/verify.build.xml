@@ -1,6 +1,6 @@
 <project name="verify" default="verify">
   <description>
-    Makes sure system compiles and passes checkstyle, findbugs, and pmd.  
+    Makes sure system compiles and passes checkstyle, findbugs, junit, javadoc and pmd.  
   </description>
 
   <property name="pmd.failonerror" value="true" />
