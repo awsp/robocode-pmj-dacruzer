@@ -66,7 +66,7 @@ public class DaCruzer extends Robot {
     // if finished traversing, scan for robots and fire.
     // spins the body of the robot 90 degrees to conduct scans.
     while (true) {
-      this.turnLeft(90);
+      this.turnGunLeft(90);
     }
   }
 
@@ -77,16 +77,7 @@ public class DaCruzer extends Robot {
    */
   @Override
   public void onScannedRobot(ScannedRobotEvent e) {
-    // OVER 9000!!
     double firePower = Math.min(400 / e.getDistance(), 3);
     this.fire(firePower);
-  }
-  
-  /**
-   * A useless method, inserted just to show less than 100% coverage.
-   * @return 4.
-   */
-  private int multiply() {
-    return (2 * 2);
   }
 }
