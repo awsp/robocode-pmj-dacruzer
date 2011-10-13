@@ -46,10 +46,10 @@ public class TestDaCruzerVersusSittingDuck extends RobotTestBed {
     // Sanity check that results[1] is DaCruzer (not strictly necessary, but illustrative).
     BattleResults daCruzerResults = battleResults[1];
     String robotName = daCruzerResults.getTeamLeaderName();
-    assertEquals("Check that results[1] is DaCruzer", robotName, "pmj.DaCruzer*");
+    assertEquals("Check that results[1] is DaCruzer", "pmj.DaCruzer*", robotName);
     
     // Check to make sure DaCruzer won every round.
-    assertEquals("Check DaCruzer winner", daCruzerResults.getFirsts(), getNumRounds());
+    assertEquals("Check DaCruzer winner", getNumRounds(), daCruzerResults.getFirsts());
   }
   
   /**
