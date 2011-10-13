@@ -13,13 +13,21 @@ import robocode.control.testing.RobotTestBed;
  */
 public class TestDaCruzerFiring extends RobotTestBed {
 
-  // True if DaCruzer has fired a bullet with power less than 1.4;
+  /**
+   *  True if DaCruzer has fired a bullet with power less than 1.4.
+   */
   boolean firePowerReachLevelOne = false;
-  // True if DaCruzer has fired a bullet with power between 1.5 to 1.9;
+  /**
+   *  True if DaCruzer has fired a bullet with power between 1.5 to 1.9.
+   */
   boolean firePowerReachLevelTwo = false;
-  // True if DaCruzer has fired a bullet with power between 2.0 to 2.4;
+  /**
+   *  True if DaCruzer has fired a bullet with power between 2.0 to 2.4.
+   */
   boolean firePowerReachLevelThree = false;
-  // True if DaCruzer has fired a bullet with power greater than 2.4;
+  /**
+   *  True if DaCruzer has fired a bullet with power greater than 2.4.
+   */
   boolean firePowerReachLevelFour = false;
 
   /**
