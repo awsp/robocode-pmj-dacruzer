@@ -88,9 +88,11 @@ public class DaCruzer extends Robot {
    */
   @Override
   public void onWin(WinEvent win) {
+    // This was a triumph.
     while (true) {
       turnRight(20);
       turnLeft(20);
     }
+    // I'm making a note here: HUGE SUCCESS.
   }
 }
