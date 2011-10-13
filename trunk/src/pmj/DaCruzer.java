@@ -79,6 +79,8 @@ public class DaCruzer extends Robot {
    */
   @Override
   public void onScannedRobot(ScannedRobotEvent e) {
+    
+    // Calculate the power level of the bullet based on event distance.
     double firePower = Math.min(400 / e.getDistance(), 3);
     this.fire(firePower);
   }
