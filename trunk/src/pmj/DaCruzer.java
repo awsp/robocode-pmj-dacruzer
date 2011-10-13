@@ -82,8 +82,9 @@ public class DaCruzer extends Robot {
   }
 
   /**
-   * Victory Dance once the robot has won
+   * Victory Dance once the robot has won.
    * 
+   * @param win takes place when robot wins
    */
   @Override
   public void onWin(WinEvent win) {
