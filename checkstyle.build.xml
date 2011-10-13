@@ -1,7 +1,7 @@
 <project name="checkstyle" default="checkstyle" xmlns:ivy="antlib:org.apache.ivy.ant">
 	<description>
   Runs checkstyle on system, using rules in: lib/configfiles
-  Detects any source file deviations from our established class coding standards. 
+  Detects any source file deviations from our coding standards. 
   Invocation: ant -f checkstyle.build.xml
   For more information about checkstyle, goto http://checkstyle.sourceforge.net
   </description>
