@@ -92,12 +92,14 @@ public class DaCruzer extends Robot {
   }
 
   /**
-   * Victory Dance once the robot has won.
+   * Victory Dance and change body color once the robot has won.
    * 
    * @param win takes place when robot wins.
    */
   @Override
   public void onWin(WinEvent win) {
+    // Robot changes color after victory
+    this.setBodyColor(Color.YELLOW);
     // This was a triumph.
     while (true) {
       turnRight(20);
