@@ -82,7 +82,11 @@ public class DaCruzer extends Robot {
     
     // Calculate the power level of the bullet based on event distance.
     double firePower = Math.min(400 / e.getDistance(), 3);
-    this.fire(firePower);
+
+    // To avoid potentially wasting a turn, fire only if the gun heat is 0.
+    if (getGunHeat() == 0.0) {
+      this.fire(firePower);
+    }
   }
 
   /**
