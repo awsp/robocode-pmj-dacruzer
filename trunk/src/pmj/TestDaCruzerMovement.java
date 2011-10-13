@@ -40,6 +40,26 @@ public class TestDaCruzerMovement extends RobotTestBed {
   public int getNumRounds() {
     return 10;
   }
+  
+  /**
+   * Returns a comma or space separated list like: x1,y1,heading1, x2,y2,heading2, which are the 
+   * coordinates and heading of robot #1 and #2. So "0,0,180, 50,80,270" means that robot #1 
+   * has position (0,0) and heading 180, and robot #2 has position (50,80) and heading 270.
+   * 
+   * Override this method to explicitly specify the initial positions for your test cases. 
+   * 
+   * Defaults to null, which means that the initial positions are determined randomly.  Since
+   * battles are deterministic by default, the initial positions are randomly chosen but will
+   * always be the same each time you run the test case. 
+   * 
+   * @return The list of initial positions.
+   */
+  @Override
+  public String getInitialPositions() {
+    // Try to place SittingDuck in a location that will not interfere with 
+    // DaCruzer's movement path
+    return "400,300,90, 0,0,0";
+  }
 
   /**
    * After each turn, check to see if we're at a corner. If so, set the corresponding flag.

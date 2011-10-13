@@ -58,9 +58,9 @@ public class TestDaCruzerFiring extends RobotTestBed {
     IBulletSnapshot bullets[] = event.getTurnSnapshot().getBullets();
     double bulletPower;
     
-    for (int i = 0; i < bullets.length; i++) {
+    for (IBulletSnapshot bullet : bullets) {
     
-      bulletPower = bullets[i].getPower();
+      bulletPower = bullet.getPower();
       
       if (bulletPower <= 1.4) {
         firePowerReachLevelOne = true;
