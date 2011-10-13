@@ -2,20 +2,20 @@ package pmj;
 
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
+import robocode.WinEvent;
 import java.awt.Color;
 
 /**
- * Implements the DaCruzer robot, which completes a circuit around the arena, 
- * then spins to scan for other robots. 
+ * Implements the DaCruzer robot, which completes a circuit around the arena, then spins to scan for
+ * other robots.
  * 
  * @author Philip Johnson
  */
 public class DaCruzer extends Robot {
 
   /**
-   * Moves to successive corners and rotates the robot to maximize the chances
-   * of scanning another robot. 
-   * Code courtesy of Kimberly Heu.
+   * Moves to successive corners and rotates the robot to maximize the chances of scanning another
+   * robot. Code courtesy of Kimberly Heu.
    */
   @Override
   public void run() {
@@ -25,7 +25,7 @@ public class DaCruzer extends Robot {
     double fieldWidth = getBattleFieldWidth();
     // Specifies battle field Height
     double fieldHeight = getBattleFieldHeight();
-    
+
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
 
@@ -79,5 +79,17 @@ public class DaCruzer extends Robot {
   public void onScannedRobot(ScannedRobotEvent e) {
     double firePower = Math.min(400 / e.getDistance(), 3);
     this.fire(firePower);
+  }
+
+  /**
+   * Victory Dance once the robot has won
+   * 
+   */
+  @Override
+  public void onWin(WinEvent win) {
+    while (true) {
+      turnRight(20);
+      turnLeft(20);
+    }
   }
 }
