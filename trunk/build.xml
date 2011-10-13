@@ -67,7 +67,9 @@
     </javac>
     <copy todir="${lib.dir}/robocode/robots">
       <fileset dir="${build.dir}/classes">
-        <include name="**/DaCruzer.*"/>
+        <!-- use "**/DaCruzer*.*" instead of "**/DaCruzer.*" 
+        to allow for inclusion of anonymous classes-->
+        <include name="**/DaCruzer*.*"/>
       </fileset>
     </copy>
   </target>
