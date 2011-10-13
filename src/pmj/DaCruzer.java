@@ -6,16 +6,16 @@ import robocode.WinEvent;
 import java.awt.Color;
 
 /**
- * Implements the DaCruzer robot, which completes a circuit around the arena, then spins to scan for
- * other robots.
+ * Implements the DaCruzer robot, which completes a circuit 
+ * around the arena, then spins to scan for other robots.
  * 
  * @author Philip Johnson
  */
 public class DaCruzer extends Robot {
 
   /**
-   * Moves to successive corners and rotates the robot to maximize the chances of scanning another
-   * robot. Code courtesy of Kimberly Heu.
+   * Moves to successive corners and rotates the robot to maximize the 
+   * chances of scanning another robot. Code courtesy of Kimberly Heu.
    */
   @Override
   public void run() {
