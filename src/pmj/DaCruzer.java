@@ -19,6 +19,9 @@ public class DaCruzer extends Robot {
    */
   @Override
   public void run() {
+    
+    //customize tank colors
+    this.setGunColor(new Color(102, 0, 102));  //purple
 
     // Get the field's dimensions.
     // Specifies battle field width.
@@ -29,9 +32,8 @@ public class DaCruzer extends Robot {
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
 
-    // Change bullet color to red.
+    //late color changes once tank is ready to move
     setBulletColor(Color.red);
-    // Change radar color to black.
     setRadarColor(Color.black);
 
     // Get the robot's current location.
