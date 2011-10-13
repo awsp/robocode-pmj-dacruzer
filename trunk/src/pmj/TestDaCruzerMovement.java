@@ -8,7 +8,7 @@ import robocode.control.testing.RobotTestBed;
 
 /**
  * Tests that DaCruzer moves to all four corners per its specified strategy.
- *
+ * 
  * @author Professor Philip Johnson
  */
 public class TestDaCruzerMovement extends RobotTestBed {
@@ -23,7 +23,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
 
   /**
    * Specifies that SittingDuck and DaCruzer are to be matched up in this test case.
-   *
+   * 
    * @return The comma-delimited list of robots in this match.
    */
   @Override
@@ -33,7 +33,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
 
   /**
    * This test runs for 10 round.
-   *
+   * 
    * @return The number of rounds.
    */
   @Override
@@ -43,12 +43,12 @@ public class TestDaCruzerMovement extends RobotTestBed {
 
   /**
    * After each turn, check to see if we're at a corner. If so, set the corresponding flag.
-   *
+   * 
    * @param event Info about the current state of the battle.
    */
   @Override
   public void onTurnEnded(TurnEndedEvent event) {
-    // Get the snapshot of the robot daCruzer 
+    // Get the snapshot of the robot daCruzer
     IRobotSnapshot robot = event.getTurnSnapshot().getRobots()[1];
 
     // Get robot's current position
@@ -75,7 +75,7 @@ public class TestDaCruzerMovement extends RobotTestBed {
 
   /**
    * After the battle, check to see that we've visited the corners.
-   *
+   * 
    * @param event Details about the completed battle.
    */
   @Override
