@@ -109,6 +109,7 @@ public class DaCruzer extends Robot {
     while (true) {
       turnRight(20);
       turnLeft(20);
+      turnGunRight(360);
     }
     // I'm making a note here: HUGE SUCCESS.
   }
