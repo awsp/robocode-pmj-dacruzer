@@ -42,13 +42,13 @@ public class DaCruzer extends Robot {
     setRadarColor(Color.black);
 
     // Get the robot's current location.
-    double robotPositionX = getX();
-    double robotPositionY = getY();
+    double robotX = getX();
+    double robotY = getY();
 
     // Move to top left corner.
-    ahead(fieldHeight - robotPositionY);
+    ahead(fieldHeight - robotY);
     turnLeft(90);
-    ahead(robotPositionX);
+    ahead(robotX);
     turnRight(360);
 
     // Move to bottom right corner.
@@ -78,7 +78,7 @@ public class DaCruzer extends Robot {
   }
 
   /**
-   * Fires at any robots it finds with a power that is based on distance from target.
+   * Fires at any robot it finds with a power that is based on distance from target.
    * 
    * @param e contains information about the enemy robot, e.g. its location.
    */
