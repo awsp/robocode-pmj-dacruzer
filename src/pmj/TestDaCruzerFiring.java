@@ -62,6 +62,7 @@ public class TestDaCruzerFiring extends RobotTestBed {
     
       bulletPower = bullet.getPower();
       
+	  // Bullet power is less than 1.4
       if (bulletPower <= 1.4) {
         firePowerReachLevelOne = true;
       }
