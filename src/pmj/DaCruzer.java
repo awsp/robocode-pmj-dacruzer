@@ -6,24 +6,27 @@ import robocode.WinEvent;
 import java.awt.Color;
 
 /**
- * Implements the DaCruzer robot, which completes a circuit 
- * around the arena, then spins to scan for other robots.
+ * Implements the DaCruzer robot, which completes a circuit around the arena, then spins to scan for
+ * other robots.
  * 
  * @author Philip Johnson
  */
 public class DaCruzer extends Robot {
 
   /**
-   * Moves to successive corners and rotates the robot to maximize the 
-   * chances of scanning another robot. Code courtesy of Kimberly Heu.
+   * Moves to successive corners and rotates the robot to maximize the chances of scanning another
+   * robot. Code courtesy of Kimberly Heu.
    */
   @Override
   public void run() {
-    
-    //customize tank colors
-    this.setGunColor(new Color(102, 0, 102));  //purple
+
+    // Customize tank colors.
+    // Gun Color = Purple.
+    this.setGunColor(new Color(102, 0, 102)); 
+    // Radar Scan Color = White.
     this.setScanColor(Color.green);
-    this.setBodyColor(new Color(0,0,0)); //black
+    // Body Color = Black.
+    this.setBodyColor(new Color(0, 0, 0));
     //body = white, gun = blue, radar = pink
     this.setColors(Color.white, Color.blue, Color.pink);
     
@@ -37,7 +40,7 @@ public class DaCruzer extends Robot {
     // Orient the robot so that it is facing upward.
     turnLeft(getHeading());
 
-    //late color changes once tank is ready to move
+    // Late color changes once tank is ready to move.
     setBulletColor(Color.red);
     setRadarColor(Color.black);
 
@@ -84,7 +87,7 @@ public class DaCruzer extends Robot {
    */
   @Override
   public void onScannedRobot(ScannedRobotEvent e) {
-    
+
     // Calculate the power level of the bullet based on event distance.
     double firePower = Math.min(400 / e.getDistance(), 3);
 
@@ -95,15 +98,12 @@ public class DaCruzer extends Robot {
   }
 
   /**
-   * Victory Dance and change body color once the robot has won.
-   * Hooray hooray!!!!!!!!!!!!!!!!!!!!!!!!!!^_____________^
+   * Victory Dance once the robot has won.
    * 
    * @param win takes place when robot wins.
    */
   @Override
   public void onWin(WinEvent win) {
-    // Robot changes color after victory
-    this.setBodyColor(Color.YELLOW);
     // This was a triumph.
     while (true) {
       turnRight(20);
