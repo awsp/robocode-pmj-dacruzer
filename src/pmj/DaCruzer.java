@@ -22,7 +22,7 @@ public class DaCruzer extends Robot {
     
     //customize tank colors
     this.setGunColor(new Color(102, 0, 102));  //purple
-    this.setScanColor(Color.white);
+    this.setScanColor(Color.green);
     this.setBodyColor(new Color(0,0,0)); //black
     //body = white, gun = blue, radar = pink
     this.setColors(Color.white, Color.blue, Color.pink);
