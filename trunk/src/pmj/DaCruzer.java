@@ -22,14 +22,13 @@ public class DaCruzer extends Robot {
 
     // Customize tank colors.
     // Gun Color = Purple.
-    this.setGunColor(new Color(102, 0, 102)); 
+    this.setGunColor(new Color(102, 0, 102));
     // Radar Scan Color = White.
     this.setScanColor(Color.green);
     // Body Color = Black.
     this.setBodyColor(new Color(0, 0, 0));
-    //body = white, gun = blue, radar = pink
+    // body = white, gun = blue, radar = pink
     this.setColors(Color.white, Color.blue, Color.pink);
-    
 
     // Get the field's dimensions.
     // Specifies battle field width.
@@ -43,7 +42,6 @@ public class DaCruzer extends Robot {
     // Late color changes once tank is ready to move.
     setBulletColor(Color.pink);
     setRadarColor(Color.pink);
-    
 
     // Get the robot's current location.
     double robotX = getX();
