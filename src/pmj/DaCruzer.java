@@ -41,8 +41,9 @@ public class DaCruzer extends Robot {
     turnLeft(getHeading());
 
     // Late color changes once tank is ready to move.
-    setBulletColor(Color.red);
-    setRadarColor(Color.black);
+    setBulletColor(Color.pink);
+    setRadarColor(Color.pink);
+    
 
     // Get the robot's current location.
     double robotX = getX();
