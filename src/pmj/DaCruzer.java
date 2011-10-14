@@ -24,7 +24,7 @@ public class DaCruzer extends Robot {
     // Gun Color = Purple.
     this.setGunColor(new Color(102, 0, 102));
     // Radar Scan Color = White.
-    this.setScanColor(Color.green);
+    this.setScanColor(Color.pink);
     // Body Color = Black.
     this.setBodyColor(new Color(0, 0, 0));
     // body = white, gun = blue, radar = pink
