@@ -4,6 +4,7 @@ import robocode.Robot;
 import robocode.ScannedRobotEvent;
 import robocode.WinEvent;
 import java.awt.Color;
+import robocode.HitByBulletEvent;
 
 /**
  * Implements the DaCruzer robot, which completes a circuit around the arena, then spins to scan for
@@ -113,5 +114,21 @@ public class DaCruzer extends Robot {
     }
     // I'm making a note here: HUGE SUCCESS.
     // It's hard to overstate my satisfaction.
+  }
+  
+  /**
+   * Changes direction based on enemies bearing and moves away from fire.
+   * 
+   * @param event contains information about enemy
+   */
+  @Override
+  public void onHitByBullet(HitByBulletEvent event) {
+    if (event.getBearing() + 90 > 180) {
+      turnRight(event.getBearing() - 90);
+    }
+    else {
+      turnRight(event.getBearing() + 90);
+    }
+    ahead(50);
   }
 }
