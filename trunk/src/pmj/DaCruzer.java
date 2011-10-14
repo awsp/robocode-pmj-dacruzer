@@ -27,8 +27,8 @@ public class DaCruzer extends Robot {
     this.setScanColor(Color.pink);
     // Body Color = Black.
     this.setBodyColor(new Color(0, 0, 0));
-    // body = white, gun = blue, radar = pink
-    this.setColors(Color.white, Color.blue, Color.pink);
+    // body = red, gun = white, radar = blue
+    this.setColors(Color.red, Color.white, Color.blue);
 
     // Get the field's dimensions.
     // Specifies battle field width.
